@@ -1,6 +1,5 @@
 {% set version = '0.6.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-flowchart
@@ -13,8 +12,7 @@ source:
   sha256: cbe302b46eb50bd2acf6f588d6627f87073b91f74b3106623282d612d9d18052
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
