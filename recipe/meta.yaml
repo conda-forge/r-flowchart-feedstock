@@ -1,4 +1,4 @@
-{% set version = '0.6.0' %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/flowchart_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/flowchart/flowchart_{{ version }}.tar.gz
-  sha256: cbe302b46eb50bd2acf6f588d6627f87073b91f74b3106623282d612d9d18052
+  sha256: fadd833c703c294049cb39cb78c8587c88d17fea34a31e4799a8fc3cb1268b34
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -56,11 +56,8 @@ about:
   home: https://bruigtp.github.io/flowchart/
   dev_url: https://github.com/bruigtp/flowchart
   license: GPL-3.0-or-later
-  summary: Creates participant flow diagrams directly from a dataframe. Representing the flow
-    of participants through each stage of a study, especially in clinical trials, is
-    essential to assess the generalisability and validity of the results. This package
-    provides a set of functions that can be combined with a pipe operator to create
-    all kinds of flowcharts from a data frame in an easy way.
+  summary: Creates participant flow diagrams directly from a dataframe. Representing the flow of participants through each stage of a study, especially in clinical trials, is essential to assess the generalisability and validity of the results. This package provides a set of functions that can be combined with a pipe operator
+    to create all kinds of flowcharts from a data frame in an easy way.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
