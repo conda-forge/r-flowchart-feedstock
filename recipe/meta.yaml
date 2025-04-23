@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/flowchart_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/flowchart/flowchart_{{ version }}.tar.gz
-  sha256: fadd833c703c294049cb39cb78c8587c88d17fea34a31e4799a8fc3cb1268b34
+  sha256: 78bf8938602aef20bd56c05740ec7540499ed0f1afd7d173495c3f7cde6285c6
 
 build:
   number: 0
