@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/flowchart_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/flowchart/flowchart_{{ version }}.tar.gz
-  sha256: 78bf8938602aef20bd56c05740ec7540499ed0f1afd7d173495c3f7cde6285c6
+  sha256: 93479ec8886bf437a365c03bbee34edbce179a7cbc3b4a75e65093413816b444
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
   host:
     - r-base
     - r-gmisc
+    - r-cli
     - r-dplyr >=1.1.0
     - r-purrr
     - r-rlang
@@ -39,6 +40,7 @@ requirements:
   run:
     - r-base
     - r-gmisc
+    - r-cli
     - r-dplyr >=1.1.0
     - r-purrr
     - r-rlang
