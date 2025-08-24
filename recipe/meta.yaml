@@ -29,6 +29,7 @@ requirements:
   host:
     - r-base
     - r-gmisc
+    - r-cli
     - r-dplyr >=1.1.0
     - r-purrr
     - r-rlang
@@ -39,6 +40,7 @@ requirements:
   run:
     - r-base
     - r-gmisc
+    - r-cli
     - r-dplyr >=1.1.0
     - r-purrr
     - r-rlang
